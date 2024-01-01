@@ -1,0 +1,77 @@
+{
+	"info": {
+		"_postman_id": "e1aceea4-deb9-4c66-9a97-574d4d941129",
+		"name": "ProductImages",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getProductImages",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8082/product-image/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"product-image",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createProductImage",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"product_id\": 1,\r\n    \"image\": \"data:image/png;base64\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8082/product-image",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"product-image"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteProductImage",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8082/product-image/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"product-image",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

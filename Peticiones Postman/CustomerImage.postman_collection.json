@@ -1,0 +1,37 @@
+{
+	"info": {
+		"_postman_id": "fd521143-4cde-4358-8c02-e4a6cf79bdb5",
+		"name": "CustomerImage",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "setCustomerImage",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"customer_image_id\": 1,\r\n    \"customer_image\": \"https://i.pinimg.com/originals/d9/7b/bb/d97bbb08017ac2309307f0822e63d082.jpg\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/customer-image",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"customer-image"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
